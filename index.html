@@ -31,13 +31,13 @@
     </div>
 
     <script>
-        $.getJSON('http://www.nooksworkbench.com:8080/api/guilds', function(data) {
+        $.getJSON('https://www.nooksworkbench.com/api/guilds', function(data) {
             $("#guilds").html(commafy(data[0].guildCount));
         });
-        $.getJSON('http://www.nooksworkbench.com:8080/api/events', function(data) {
+        $.getJSON('https://www.nooksworkbench.com/api/events', function(data) {
             $("#events").html(commafy(data[0].messageEvents));
         });
-        $.getJSON('http://www.nooksworkbench.com:8080/api/uptime', function(data) {
+        $.getJSON('https://www.nooksworkbench.com/api/uptime', function(data) {
             $("#uptime").html(msToTime(data[0].uptime));
         });
 
