@@ -17,7 +17,7 @@ function msToTime (ms) {
     var days = parseInt(hours/24, 10);
     hours = hours%24;
 
-    return days + " day" + (days>1?"s":"") + ", " + hours + " hour" + (hours>1?"s":"") + ", and " + minutes + " minute" + (minutes>1?"s":"") +".";
+    return days + " day" + (days!==1?"s":"") + ", " + hours + " hour" + (hours!==1?"s":"") + ", and " + minutes + " minute" + (minutes!==1?"s":"") +".";
 }
 
 // https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript?page=2&tab=active#tab-top
